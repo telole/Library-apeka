@@ -20,6 +20,6 @@ class MainActivity : AppCompatActivity() {
             Buku("Buku 3", "Penulis 3", "2022", R.drawable.icon)
         )
 
-        recyclerView.adapter = BukuAdapter(listBuku)
+        recyclerView.adapter = BukuAdapter(this, listBuku)
     }
 }

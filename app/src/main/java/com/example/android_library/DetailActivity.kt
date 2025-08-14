@@ -15,13 +15,13 @@ class DetailActivity : AppCompatActivity() {
         val tvPenulisDetail = findViewById<TextView>(R.id.tvPenulis)
         val tvTahunDetail = findViewById<TextView>(R.id.tvTahun)
 
-        val judul = intent.getStringExtra("judul")
+     val judul = intent.getStringExtra("judul")
         val penulis = intent.getStringExtra("penulis")
         val tahun = intent.getStringExtra("tahun")
-        val gambar = intent.getIntExtra("gambar", 0)
+         val gambar = intent.getIntExtra("gambar", 0)
 
-        imgDetail.setImageResource(gambar)
-        tvJudulDetail.text = judul
+         imgDetail.setImageResource(gambar)
+       tvJudulDetail.text = judul
         tvPenulisDetail.text = penulis
         tvTahunDetail.text = tahun
     }
