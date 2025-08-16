@@ -19,7 +19,10 @@ Ini adalah proyek sederhana untuk belajar Recycle View menggunakan Git & Android
 - Android Studio
 - Git + GitHub
 
-## 📸 Penjelasan code penting
+## 📸 Penjelasan Kode
+Pada bagian Andoid Manifest.xml terjadi penambahan dan perubahan kode seperti ini
+<img width="831" height="300" alt="image" src="https://github.com/user-attachments/assets/496a2383-77b8-4d81-bc07-3e6331ab4e6a" />
+
 <img width="3276" height="3964" alt="activity_detail xml" src="https://github.com/user-attachments/assets/d3cac474-7c82-4cad-b352-1da97ab11569" />
 penjelasan kode :
 - LinearLayout: Container utama yang menyusun elemen secara vertikal.
@@ -120,7 +123,9 @@ penjelasan:
       - Button (btnLihat) → tombol untuk membuka detail buku.
 
 ## 📸 Tampilan dari Hasil Aplikasi
-<img src="https://github.com/user-attachments/assets/a34f3c29-6082-43d4-a6a5-e91d9fecde27" width="300"/>
+- Tampilan Awal Setelah memasuki Aplikasi 
+<img src="https://github.com/user-attachments/assets/a34f3c29-6082-43d4-a6a5-e91d9fecde27" width="300 "/>
+Tampilan 
 <img src="https://github.com/user-attachments/assets/39c1b2d2-6f63-48d4-b8f5-af5803bda0b3" width="300"/>
 <img src="https://github.com/user-attachments/assets/6edd6bfe-c759-4f65-a327-afb0edd40e4b" width="300"/>
 <img src="https://github.com/user-attachments/assets/8e1f3a18-b842-42ac-aac6-3b2354662763" width="300"/>
