@@ -119,13 +119,13 @@ penjelasan:
 
       - Button (btnLihat) → tombol untuk membuka detail buku.
 
-## 📸 Screenshot
-![WhatsApp Image 2025-08-16 at 19 07 33_f3a37167](https://github.com/user-attachments/assets/a34f3c29-6082-43d4-a6a5-e91d9fecde27)
-![WhatsApp Image 2025-08-16 at 19 07 33_356934a1](https://github.com/user-attachments/assets/39c1b2d2-6f63-48d4-b8f5-af5803bda0b3)
-![WhatsApp Image 2025-08-16 at 19 07 34_7d0261e3](https://github.com/user-attachments/assets/6edd6bfe-c759-4f65-a327-afb0edd40e4b)
-![WhatsApp Image 2025-08-16 at 19 07 34_1c2b00f1](https://github.com/user-attachments/assets/8e1f3a18-b842-42ac-aac6-3b2354662763)
-![WhatsApp Image 2025-08-16 at 19 07 34_ea70b819](https://github.com/user-attachments/assets/b046f1ad-04ad-4ab0-a100-f5a5efb69384)
-![WhatsApp Image 2025-08-16 at 19 07 35_a9b775c9](https://github.com/user-attachments/assets/d74656fd-6bc5-4c6d-8d3c-f7b460ca789e)
+## 📸 Tampilan dari Hasil Aplikasi
+<img src="https://github.com/user-attachments/assets/a34f3c29-6082-43d4-a6a5-e91d9fecde27" width="300"/>
+<img src="https://github.com/user-attachments/assets/39c1b2d2-6f63-48d4-b8f5-af5803bda0b3" width="300"/>
+<img src="https://github.com/user-attachments/assets/6edd6bfe-c759-4f65-a327-afb0edd40e4b" width="300"/>
+<img src="https://github.com/user-attachments/assets/8e1f3a18-b842-42ac-aac6-3b2354662763" width="300"/>
+<img src="https://github.com/user-attachments/assets/b046f1ad-04ad-4ab0-a100-f5a5efb69384" width="300"/>
+<img src="https://github.com/user-attachments/assets/d74656fd-6bc5-4c6d-8d3c-f7b460ca789e" width="300"/>
 
 
 
