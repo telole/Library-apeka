@@ -1,6 +1,6 @@
 # Project RecyclerView  ( Library )
 
-Project RecycleView ini merupakan project aplikasi sederhana dengan pembuatan berbasis Android Studio yang dibuat dengan bentuk berupa daftar buku.
+Project RecycleView ini merupakan sebuah aplikasi Android sederhana yang dibuat menggunakan Android Studio dengan tujuan untuk menampilkan daftar buku. Aplikasi ini memanfaatkan komponen RecyclerView, yaitu komponen yang lebih fleksibel dan efisien dibandingkan ListView untuk menampilkan data dalam jumlah banyak. Pada project ini, daftar buku ditampilkan dalam bentuk list yang tersusun secara vertikal sehingga mudah dibaca oleh pengguna.
 
 ## 👥 Tim
 - M Alfian Fauzi ( 21 )
@@ -18,6 +18,7 @@ Project RecycleView ini merupakan project aplikasi sederhana dengan pembuatan be
 - Kotlin
 - Android Studio
 - Git + GitHub
+- RecyclerView
 
 ## 📸 Penjelasan Kode
 1. AndroidManifest.xml
