@@ -25,114 +25,29 @@ Project RecycleView ini merupakan project aplikasi sederhana dengan pembuatan be
 
 Penjelasan : Kode pada AndroidManifest.xml berfungsi untuk mengatur identitas aplikasi dan mendeklarasikan semua activity yang akan dijalankan. Pada bagian <application>, mengatur properti penting seperti ikon, nama aplikasi, dan tema aplikasi. Pada File ini terdapat tiga activity utama, yakni SplashScreen, MainActivity, dan DetailActivity. Pada SplashScreen diberikan atribut exported="true" serta intent-filter dengan action MAIN dan kategori LAUNCHER. Hal ini membuat SplashScreen menjadi halaman pertama yang dijalankan ketika aplikasi dibuka. Sedangkan pada MainActivity terdaftar sebagai activity utama yang menampilkan daftar siswa, namun hanya dapat dijalankan setelah SplashScreen selesai, dikarenakan tidak memiliki intent-filter. dan Pada DetailActivity digunakan untuk menampilkan informasi detail dari siswa yang dipilih oleh pengguna. Activity ini hanya bisa dipanggil dari dalam aplikasi, tanpa adanya intent-filter.
 
-2. Book
+2. Buku
 <img width="380" height="180" alt="Screenshot 2025-08-20 175907" src="https://github.com/user-attachments/assets/4485c65e-33bc-4f2b-908c-573d9ce77c16" />
 
-Penjelasan : Kode pada file Book.kt berfungsi sebagai model data dari informasi setiap buku yang akan ditampilkan dan disimpan pada aplikasi. File ini berupa data Class Book yyang memiliki empat properti utama, yaitu title sebagai (judul buku), author sebagai (penulis buku), year sebagai (tahun terbit), dan imageRes sebagai (ID resource untuk gambar sampul) yang akan menjadi struktur data pada RecyclerView.
+Penjelasan : Kode pada file Buku.kt berfungsi sebagai model data dari informasi setiap buku yang akan ditampilkan dan disimpan pada aplikasi. File ini berupa data Class Book yyang memiliki empat properti utama, yaitu title sebagai (judul buku), author sebagai (penulis buku), year sebagai (tahun terbit), dan imageRes sebagai (ID resource untuk gambar sampul) yang akan menjadi struktur data pada RecyclerView.
 
-3. Buku Adapter
+3. BukuAdapter
 
-4. Main
+Penjelasan : BukuAdapter digunakan untuk menghubungkan data buku dengan tampilan pada RecyclerView. Pada onCreateViewHolder(), layout item di-inflate agar setiap buku memiliki tampilan sendiri. Kemudian pada onBindViewHolder(), data dari objek buku seperti judul, penulis, tahun, dan gambar diikat (bind) ke TextView maupun ImageView. Selain itu, di dalam method ini juga ditambahkan listener pada item view, sehingga ketika sebuah buku dipilih, adapter membuat Intent menuju DetailActivity dan mengirimkan data buku tersebut melalui putExtra(). Dengan cara ini, BookAdapter tidak hanya menampilkan data, tetapi juga mengatur perpindahan ke halaman detail saat item diklik.
 
-5. 
+4. DetailActivity
+<img width="766" height="688" alt="image" src="https://github.com/user-attachments/assets/f86dfa21-bc99-409a-8f54-a8fcda938080" />
+
+Penjelasan : Kode pad DetailActivity digunakan untuk menampilkan detail dari buku yang dipilih pengguna. Pada method onCreate(), layout detail dipanggil dengan setContentView(R.layout.activity_detail). Setelah itu, data buku diterima melalui Intent yang dikirimkan dari BookAdapter menggunakan getIntent(). Data tersebut diambil menggunakan method seperti getStringExtra("judul"), getStringExtra("penulis"), getIntExtra("tahun", 0), atau getIntExtra("gambar", 0). Nilai yang diperoleh kemudian di-bind ke komponen tampilan, misalnya TextView untuk judul dan penulis, serta ImageView untuk gambar cover buku. Dengan cara ini, DetailActivity hanya bertugas membaca data yang sudah dikirim adapter dan menampilkannya di layout, tanpa perlu tahu bagaimana data tersebut dipilih sebelumnya.
+
+5. Main
+<img width="650" height="450" alt="image" src="https://github.com/user-attachments/assets/9e89bbbd-e595-4c1a-9c20-49e873264eaf" />
+
+Penjelasan : MainActivity bertindak sebagai host utama untuk RecyclerView. Pada onCreate(), komponen RecyclerView di-bind menggunakan findViewById(), lalu diberikan LayoutManager berupa LinearLayoutManager(context) agar dapat item ditampilkan dalam bentuk vertikal, Lalu sebuah instance BukuAdapter dibuat dengan parameter this sebagai Context dan listBuku sebagai sumber data. Adapter ini dipasang ke RecyclerView menggunakan recyclerView.adapter = bukuAdapter.
+
+6. SplashScreen
 <img width="3276" height="3964" alt="activity_detail xml" src="https://github.com/user-attachments/assets/d3cac474-7c82-4cad-b352-1da97ab11569" />
-penjelasan kode :
-- LinearLayout: Container utama yang menyusun elemen secara vertikal.
 
--match_parent: Lebar dan tinggi mengikuti ukuran layar.
-
--padding="16dp": Memberi jarak 16dp dari tepi layout.
-
--tools:context=".DetailActivity": Menandakan layout ini dipakai oleh DetailActivity.
-<img width="3276" height="1864" alt="activity_main xml" src="https://github.com/user-attachments/assets/97551b9b-4010-4b96-a721-6d9b017bb9d9" />
-penjelasan kode: 
--LinearLayout → Layout utama dengan orientasi vertikal dan padding 8dp.
-
--RecyclerView → Komponen untuk menampilkan daftar data (dalam hal ini daftar buku).
-
--match_parent → RecyclerView memenuhi seluruh layar.
-
--id="@+id/recyclerView" → Digunakan untuk menghubungkan dengan kode di MainActivity.
-<img width="3348" height="3040" alt="activity_splash xml" src="https://github.com/user-attachments/assets/5b7a4c3f-f6ac-4c87-b759-095b8e26df2f" />
-penjelasan: 
--RelativeLayout → Layout utama, latar belakang putih.
-
--ImageView (id: logoImage) → Menampilkan logo perpustakaan di tengah layar.
-
--TextView → Menampilkan teks “Perpustakaan Kita” di bawah logo, dengan ukuran besar (24sp), tebal, dan warna hitam.
-<img width="3132" height="3376" alt="DetailActivity kt" src="https://github.com/user-attachments/assets/24560cda-7759-4da7-b862-e1f70ebaa043" />
-penjelasan:
-DetailActivity digunakan untuk menampilkan detail buku.
-
-setContentView(R.layout.activity_detail) → menampilkan layout.
-
-findViewById → menghubungkan variabel dengan komponen UI (ImageView & TextView).
-
-intent.get...Extra → mengambil data (judul, penulis, tahun, gambar) yang dikirim dari activity sebelumnya.
-
-setImageResource & text → menampilkan data ke UI.
-<img width="3276" height="3124" alt="MainActivity kt" src="https://github.com/user-attachments/assets/cba81cb9-7561-4e70-9b5b-10af67e8f43b" /> 
-penjelasan:
-MainActivity berfungsi untuk menampilkan daftar buku dalam bentuk list dengan RecyclerView.
-
-setContentView(R.layout.activity_main) → menampilkan layout utama.
-
-recyclerView.layoutManager = LinearLayoutManager(this) → mengatur list agar tampil vertikal.
-
-listBuku → membuat data dummy berisi judul, penulis, tahun, dan gambar.
-
-recyclerView.adapter = BukuAdapter(listBuku) → menghubungkan data dengan RecyclerView melalui adapter.
-<img width="2236" height="1612" alt="Buku kt" src="https://github.com/user-attachments/assets/7ac60f3a-e1c8-4c06-a1bd-0e6f74e1daee" />
-penjelasan: 
-Buku adalah data class yang merepresentasikan 1 objek buku dengan 4 properti:
-
-judul: String → judul buku
-
-penulis: String → nama penulis
-
-tahun: String → tahun terbit
-
-gambar: Int → ID resource gambar (misalnya R.drawable.icon)
-
-Fungsinya sebagai model data yang dipakai MainActivity, RecyclerView, dan DetailActivity untuk menyimpan & menampilkan informasi buku.
-<img width="3816" height="6148" alt="BukuAdapter kt" src="https://github.com/user-attachments/assets/1020bc8f-b13e-4b0a-97ce-6ff09bd4271b" />
-penjelasan: 
-1. BookViewHolder
-
-Menyimpan referensi ke elemen UI di item_buku.xml (gambar, judul, penulis, tahun, tombol "Lihat").
-
-2. onCreateViewHolder
-
-Membuat item tampilan list dari layout item_buku.xml.
-
-3. onBindViewHolder
-
-Mengisi data buku ke item list.
-
-Atur gambar, judul, penulis, tahun sesuai dengan objek Buku.
-
-Saat tombol Lihat ditekan → membuat Intent ke DetailActivity dan mengirim data buku lewat putExtra.
-
-4. getItemCount
-
-Mengembalikan jumlah item di daftar buku.
-<img width="4604" height="6148" alt="item_buku xml" src="https://github.com/user-attachments/assets/e43ef36e-4758-4e92-9548-68c89e3a9033" />
-penjelasan:
-- MaterialCardView → wadah utama, memberikan efek kartu dengan sudut melengkung (cardCornerRadius) dan bayangan (cardElevation).
-
-- LinearLayout horizontal → membagi area jadi 2 bagian: gambar di kiri, detail buku + tombol di kanan.
-
-    - ImageView (imgBuku) → menampilkan gambar sampul buku.
-
-    - LinearLayout vertical → berisi teks + tombol.
-
-      - TextView (tvJudul) → menampilkan judul buku (tebal & besar).
-
-      - TextView (tvPenulis) → menampilkan nama penulis.
-
-      - TextView (tvTahun) → menampilkan tahun terbit.
-
-      - Button (btnLihat) → tombol untuk membuka detail buku.
+Penjelasan : SplashScreen merupakan activity pertama yang dijalankan aplikasi. Pada method onCreate(Bundle savedInstanceState), layout splash di-inflate menggunakan setContentView(R.layout.activity_splash). Activity ini dideklarasikan di AndroidManifest.xml dengan intent-filter berisi MAIN dan LAUNCHER, sehingga sistem Android tahu untuk menjadikannya entry point aplikasi. Biasanya, di dalam SplashScreen terdapat kode Handler.postDelayed() atau Coroutine yang berfungsi menunda beberapa detik sebelum memanggil startActivity(new Intent(this, MainActivity.class)). Setelah itu, finish() dipanggil agar SplashScreen ditutup dan pengguna dialihkan ke MainActivity. Dengan cara ini, SplashScreen berfungsi sebagai jembatan awal sebelum ke halaman utama.
 
 ## 📸 Tampilan dari Hasil Aplikasi
 - Tampilan Awal Setelah memasuki Aplikasi 
