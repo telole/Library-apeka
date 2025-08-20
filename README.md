@@ -61,8 +61,9 @@ Penjelasan : Kode pada SplashScreen merupakan activity pertama yang dijalankan a
 <img src="https://github.com/user-attachments/assets/39c1b2d2-6f63-48d4-b8f5-af5803bda0b3" height="600"/>
 
 
+
 - Tampilan ketika pengguna ingin melihat informasi buku secara lebih detail
-- - Tampilan ketika informasi buku ditampilkan secara detail
+- Tampilan ketika informasi buku ditampilkan secara detail
 <img src="https://github.com/user-attachments/assets/6edd6bfe-c759-4f65-a327-afb0edd40e4b" height="600"/>
 <img src="https://github.com/user-attachments/assets/8e1f3a18-b842-42ac-aac6-3b2354662763" height="600"/>
 
