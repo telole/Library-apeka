@@ -20,6 +20,14 @@ Ini adalah proyek sederhana untuk belajar Recycle View menggunakan Git & Android
 - Git + GitHub
 
 ## 📸 Penjelasan Kode
+1. AndroidManifest.xml
+<img width="500" height="300" alt="Screenshot 2025-08-20 165627" src="https://github.com/user-attachments/assets/76c1bba2-1969-4fe2-a5c0-61853ee6435c" />
+
+2. Book
+
+3. Main
+
+4. 
 <img width="3276" height="3964" alt="activity_detail xml" src="https://github.com/user-attachments/assets/d3cac474-7c82-4cad-b352-1da97ab11569" />
 penjelasan kode :
 - LinearLayout: Container utama yang menyusun elemen secara vertikal.
