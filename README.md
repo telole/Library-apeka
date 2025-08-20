@@ -21,8 +21,11 @@ Ini adalah proyek sederhana untuk belajar Recycle View menggunakan Git & Android
 
 ## 📸 Penjelasan Kode
 1. AndroidManifest.xml
-<img width="800" height="650" alt="Screenshot 2025-08-20 165627" src="https://github.com/user-attachments/assets/76c1bba2-1969-4fe2-a5c0-61853ee6435c" />
+<img width="750" height="650" alt="Screenshot 2025-08-20 165627" src="https://github.com/user-attachments/assets/76c1bba2-1969-4fe2-a5c0-61853ee6435c" />
 
+Penjelasan : Kode pada halaman AndroidManifest.xml berfungsi untuk mengatur identitas aplikasi serta mendeklarasikan semua aktivitas (activity) yang ada dan digunakan pada aplikasi. Pada bagian <application>, terdapat pengaturan utama yang menentukan bagaimana aplikasi ditampilkan dan dikenali pada perangkat Android. Di sini diatur beberapa properti penting, seperti ikon aplikasi yang akan terlihat di menu perangkat, nama aplikasi yang muncul di layar, serta tema visual yang digunakan untuk seluruh tampilan aplikasi. Bagian ini juga menjadi tempat untuk mendeklarasikan semua activity yang dimiliki aplikasi agar bisa dijalankan dengan benar. Pada File ini di dalamnya terdapat tiga activity utama, yakni SplashScreen, MainActivity, dan DetailActivity. Pada SplashScreen diberikan atribut exported="true" serta intent-filter dengan action MAIN dan kategori LAUNCHER. Hal ini membuat SplashScreen menjadi halaman pertama yang dijalankan ketika aplikasi dibuka. Sedangkan pada MainActivity terdaftar sebagai activity utama yang menampilkan daftar siswa, namun hanya dapat dijalankan setelah SplashScreen selesai, dikarenakan tidak memiliki intent-filter. dan Pada DetailActivity digunakan untuk menampilkan informasi detail dari siswa yang dipilih oleh pengguna. Activity ini hanya bisa dipanggil dari dalam aplikasi, tanpa adanya intent-filter.
+
+Dengan pengaturan ini, alur aplikasi menjadi lebih terstruktur: pengguna pertama kali melihat SplashScreen, kemudian diarahkan ke MainActivity untuk melihat daftar siswa, dan selanjutnya bisa membuka DetailActivity jika ingin melihat data lebih lengkap. 
 2. Book
 
 3. Main
