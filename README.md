@@ -34,7 +34,7 @@ Penjelasan : Kode pada file Buku.kt berfungsi sebagai model data dari informasi 
 
 
 3. BukuAdapter
-<img width="3816" height="5980" alt="Snippet (2)" src="https://github.com/user-attachments/assets/6076386c-d981-473f-91b8-72d905ddf8f5" />
+<img width="1800" height="900" alt="Snippet (2)" src="https://github.com/user-attachments/assets/6076386c-d981-473f-91b8-72d905ddf8f5" />
 
 
 Penjelasan : Kode pada BukuAdapter digunakan untuk menghubungkan data buku dengan tampilan pada RecyclerView. Pada onCreateViewHolder(), layout item di-inflate agar setiap buku memiliki tampilan sendiri. Kemudian pada onBindViewHolder(), data dari objek buku seperti judul, penulis, tahun, dan gambar diikat (bind) ke TextView maupun ImageView. Selain itu, di dalam method ini juga ditambahkan listener pada item view, sehingga ketika sebuah buku dipilih, adapter membuat Intent menuju DetailActivity dan mengirimkan data buku tersebut melalui putExtra(). Dengan cara ini, BookAdapter tidak hanya menampilkan data, tetapi juga mengatur perpindahan ke halaman detail saat item diklik.
