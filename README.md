@@ -23,16 +23,18 @@ Project RecycleView ini merupakan project aplikasi sederhana dengan pembuatan be
 1. AndroidManifest.xml
 <img width="750" height="650" alt="Screenshot 2025-08-20 165627" src="https://github.com/user-attachments/assets/76c1bba2-1969-4fe2-a5c0-61853ee6435c" />
 
-Penjelasan : Kode pada AndroidManifest.xml berfungsi untuk mengatur identitas aplikasi dan mendeklarasikan semua activity yang ada dan digunakan. Pada bagian <application>, mengatur properti penting seperti ikon, nama aplikasi, dan tema aplikasi. Pada File ini terdapat tiga activity utama, yakni SplashScreen, MainActivity, dan DetailActivity. Pada SplashScreen diberikan atribut exported="true" serta intent-filter dengan action MAIN dan kategori LAUNCHER. Hal ini membuat SplashScreen menjadi halaman pertama yang dijalankan ketika aplikasi dibuka. Sedangkan pada MainActivity terdaftar sebagai activity utama yang menampilkan daftar siswa, namun hanya dapat dijalankan setelah SplashScreen selesai, dikarenakan tidak memiliki intent-filter. dan Pada DetailActivity digunakan untuk menampilkan informasi detail dari siswa yang dipilih oleh pengguna. Activity ini hanya bisa dipanggil dari dalam aplikasi, tanpa adanya intent-filter.
+Penjelasan : Kode pada AndroidManifest.xml berfungsi untuk mengatur identitas aplikasi dan mendeklarasikan semua activity yang akan dijalankan. Pada bagian <application>, mengatur properti penting seperti ikon, nama aplikasi, dan tema aplikasi. Pada File ini terdapat tiga activity utama, yakni SplashScreen, MainActivity, dan DetailActivity. Pada SplashScreen diberikan atribut exported="true" serta intent-filter dengan action MAIN dan kategori LAUNCHER. Hal ini membuat SplashScreen menjadi halaman pertama yang dijalankan ketika aplikasi dibuka. Sedangkan pada MainActivity terdaftar sebagai activity utama yang menampilkan daftar siswa, namun hanya dapat dijalankan setelah SplashScreen selesai, dikarenakan tidak memiliki intent-filter. dan Pada DetailActivity digunakan untuk menampilkan informasi detail dari siswa yang dipilih oleh pengguna. Activity ini hanya bisa dipanggil dari dalam aplikasi, tanpa adanya intent-filter.
 
 2. Book
 <img width="380" height="180" alt="Screenshot 2025-08-20 175907" src="https://github.com/user-attachments/assets/4485c65e-33bc-4f2b-908c-573d9ce77c16" />
 
-Penjelasan : Kode pada file Book.kt berfungsi sebagai model data dari informasi setiap buku yang akan ditampilkan pada aplikasi. File ini berupa data Class Book yyang memiliki empat properti utama, yaitu title sebagai (judul buku), author sebagai (penulis buku), year sebagai (tahun terbit), dan imageRes sebagai (ID resource untuk gambar sampul) yang akan menjadi struktur data pada RecyclerView.
+Penjelasan : Kode pada file Book.kt berfungsi sebagai model data dari informasi setiap buku yang akan ditampilkan dan disimpan pada aplikasi. File ini berupa data Class Book yyang memiliki empat properti utama, yaitu title sebagai (judul buku), author sebagai (penulis buku), year sebagai (tahun terbit), dan imageRes sebagai (ID resource untuk gambar sampul) yang akan menjadi struktur data pada RecyclerView.
 
-3. Main
+3. Buku Adapter
 
-4. 
+4. Main
+
+5. 
 <img width="3276" height="3964" alt="activity_detail xml" src="https://github.com/user-attachments/assets/d3cac474-7c82-4cad-b352-1da97ab11569" />
 penjelasan kode :
 - LinearLayout: Container utama yang menyusun elemen secara vertikal.
@@ -138,8 +140,6 @@ penjelasan:
 <img src="https://github.com/user-attachments/assets/39c1b2d2-6f63-48d4-b8f5-af5803bda0b3" height="300"/>
 <img src="https://github.com/user-attachments/assets/6edd6bfe-c759-4f65-a327-afb0edd40e4b" height="300"/>
 <img src="https://github.com/user-attachments/assets/8e1f3a18-b842-42ac-aac6-3b2354662763" height="300"/>
-<img src="https://github.com/user-attachments/assets/b046f1ad-04ad-4ab0-a100-f5a5efb69384" height="300"/>
-<img src="https://github.com/user-attachments/assets/d74656fd-6bc5-4c6d-8d3c-f7b460ca789e" height="300"/>
 
 
 
