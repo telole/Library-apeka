@@ -57,9 +57,8 @@ Penjelasan : Kode pada SplashScreen merupakan activity pertama yang dijalankan a
 ## 📸 Tampilan dari Hasil Aplikasi
 - Tampilan awal Setelah pengguna memasuki aplikasi, muncul logo selama beberapa detik
 <img src="https://github.com/user-attachments/assets/a34f3c29-6082-43d4-a6a5-e91d9fecde27" height="400"/>
-
-- Tampilan ketika pengguna memasuki halaman utama aplikasi
 <img src="https://github.com/user-attachments/assets/39c1b2d2-6f63-48d4-b8f5-af5803bda0b3" height="400"/>
+- Tampilan ketika pengguna memasuki halaman utama aplikasi
 
 - Tampilan ketika pengguna ingin melihat informasi buku secara lebih detail
 <img src="https://github.com/user-attachments/assets/6edd6bfe-c759-4f65-a327-afb0edd40e4b" height="400"/>
