@@ -136,10 +136,10 @@ penjelasan:
 
 ## 📸 Tampilan dari Hasil Aplikasi
 - Tampilan Awal Setelah memasuki Aplikasi 
-<img src="https://github.com/user-attachments/assets/a34f3c29-6082-43d4-a6a5-e91d9fecde27" height="300"/>
-<img src="https://github.com/user-attachments/assets/39c1b2d2-6f63-48d4-b8f5-af5803bda0b3" height="300"/>
-<img src="https://github.com/user-attachments/assets/6edd6bfe-c759-4f65-a327-afb0edd40e4b" height="300"/>
-<img src="https://github.com/user-attachments/assets/8e1f3a18-b842-42ac-aac6-3b2354662763" height="300"/>
+<img src="https://github.com/user-attachments/assets/a34f3c29-6082-43d4-a6a5-e91d9fecde27" height="400"/>
+<img src="https://github.com/user-attachments/assets/39c1b2d2-6f63-48d4-b8f5-af5803bda0b3" height="400"/>
+<img src="https://github.com/user-attachments/assets/6edd6bfe-c759-4f65-a327-afb0edd40e4b" height="400"/>
+<img src="https://github.com/user-attachments/assets/8e1f3a18-b842-42ac-aac6-3b2354662763" height="400"/>
 
 
 
