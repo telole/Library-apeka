@@ -34,6 +34,8 @@ Penjelasan : Kode pada file Buku.kt berfungsi sebagai model data dari informasi 
 
 
 3. BukuAdapter
+<img width="3816" height="5980" alt="Snippet (2)" src="https://github.com/user-attachments/assets/6076386c-d981-473f-91b8-72d905ddf8f5" />
+
 
 Penjelasan : Kode pada BukuAdapter digunakan untuk menghubungkan data buku dengan tampilan pada RecyclerView. Pada onCreateViewHolder(), layout item di-inflate agar setiap buku memiliki tampilan sendiri. Kemudian pada onBindViewHolder(), data dari objek buku seperti judul, penulis, tahun, dan gambar diikat (bind) ke TextView maupun ImageView. Selain itu, di dalam method ini juga ditambahkan listener pada item view, sehingga ketika sebuah buku dipilih, adapter membuat Intent menuju DetailActivity dan mengirimkan data buku tersebut melalui putExtra(). Dengan cara ini, BookAdapter tidak hanya menampilkan data, tetapi juga mengatur perpindahan ke halaman detail saat item diklik.
 
@@ -54,6 +56,9 @@ Penjelasan : Kode pada MainActivity adalah activity utama yang menampilkan dafta
 <img width="750" height="350" alt="image" src="https://github.com/user-attachments/assets/34a2aa7e-cb89-4f2a-adae-9027707db48d" />
 
 Penjelasan : Kode pada SplashScreen merupakan activity pertama yang dijalankan aplikasi. Pada method onCreate(Bundle savedInstanceState), layout splash di-inflate menggunakan setContentView(R.layout.activity_splash). Activity ini dideklarasikan di AndroidManifest.xml dengan intent-filter berisi MAIN dan LAUNCHER, sehingga sistem Android tahu untuk menjadikannya entry point aplikasi. Biasanya, di dalam SplashScreen terdapat kode Handler.postDelayed() atau Coroutine yang berfungsi menunda beberapa detik sebelum memanggil startActivity(new Intent(this, MainActivity.class)). Setelah itu, finish() dipanggil agar SplashScreen ditutup dan pengguna dialihkan ke MainActivity. Dengan cara ini, SplashScreen berfungsi sebagai jembatan awal sebelum ke halaman utama.
+
+# Kesimpulan
+Kesimpulan dari Project ini menunjukkan bahwa penggunaan RecyclerView dalam pengembangan aplikasi Android mampu dan dapat membuat proses menampilkan data secara lebih efisien dan terstruktur. Melalui penerapan SplashScreen, MainActivity, BukuAdapter, dan DetailActivity, aplikasi berhasil memberikan pengalaman sederhana namun interaktif dalam menampilkan daftar buku beserta detailnya.
 
 ## 📸 Tampilan dari Hasil Aplikasi
 - Tampilan awal Setelah pengguna memasuki aplikasi, muncul logo selama beberapa detik
