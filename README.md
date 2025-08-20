@@ -1,13 +1,13 @@
-# Project Recycle View Library
+# Project RecyclerView  ( Library )
 
-Project RecycleView ini merupakan project aplikasi sederhana dengan pembuatan berbasis Android Studio yang dibuat dengan bentuk berupa daftar Buku.
+Project RecycleView ini merupakan project aplikasi sederhana dengan pembuatan berbasis Android Studio yang dibuat dengan bentuk berupa daftar buku.
 
 ## 👥 Tim
-- M Alfian Fauzi (21)
-- Madina Al Aliy Fi Sabill (23)
-- Meutya Candra Dewi (26)
-- Naraya Agastya (28)
-- Nur Aimah Auliya Aprilianingrum (29)
+- M Alfian Fauzi ( 21 )
+- Madina Al Aliy Fi Sabill ( 23 )
+- Meutya Candra Dewi ( 26 )
+- Naraya Agastya ( 28 )
+- Nur Aimah Auliya Aprilianingrum ( 29 )
 
 ## 📱 Fitur
 - Splash screen
@@ -23,9 +23,12 @@ Project RecycleView ini merupakan project aplikasi sederhana dengan pembuatan be
 1. AndroidManifest.xml
 <img width="750" height="650" alt="Screenshot 2025-08-20 165627" src="https://github.com/user-attachments/assets/76c1bba2-1969-4fe2-a5c0-61853ee6435c" />
 
-Penjelasan : Kode pada halaman AndroidManifest.xml berfungsi untuk mengatur identitas aplikasi serta mendeklarasikan semua aktivitas (activity) yang ada dan digunakan pada aplikasi. Pada bagian <application>, terdapat pengaturan utama yang menentukan bagaimana aplikasi ditampilkan dan dikenali pada perangkat Android. Pada bagian ini diatur beberapa properti penting, seperti ikon aplikasi yang akan terlihat di menu perangkat, nama aplikasi yang muncul di layar, serta tema visual yang digunakan untuk seluruh tampilan aplikasi. Bagian ini juga menjadi tempat untuk mendeklarasikan semua activity yang dimiliki aplikasi agar dpaat dijalankan dengan benar. Pada File ini terdapat tiga activity utama, yakni SplashScreen, MainActivity, dan DetailActivity. Pada SplashScreen diberikan atribut exported="true" serta intent-filter dengan action MAIN dan kategori LAUNCHER. Hal ini membuat SplashScreen menjadi halaman pertama yang dijalankan ketika aplikasi dibuka. Sedangkan pada MainActivity terdaftar sebagai activity utama yang menampilkan daftar siswa, namun hanya dapat dijalankan setelah SplashScreen selesai, dikarenakan tidak memiliki intent-filter. dan Pada DetailActivity digunakan untuk menampilkan informasi detail dari siswa yang dipilih oleh pengguna. Activity ini hanya bisa dipanggil dari dalam aplikasi, tanpa adanya intent-filter.
+Penjelasan : Kode pada AndroidManifest.xml berfungsi untuk mengatur identitas aplikasi dan mendeklarasikan semua activity yang ada dan digunakan. Pada bagian <application>, mengatur properti penting seperti ikon, nama aplikasi, dan tema aplikasi. Pada File ini terdapat tiga activity utama, yakni SplashScreen, MainActivity, dan DetailActivity. Pada SplashScreen diberikan atribut exported="true" serta intent-filter dengan action MAIN dan kategori LAUNCHER. Hal ini membuat SplashScreen menjadi halaman pertama yang dijalankan ketika aplikasi dibuka. Sedangkan pada MainActivity terdaftar sebagai activity utama yang menampilkan daftar siswa, namun hanya dapat dijalankan setelah SplashScreen selesai, dikarenakan tidak memiliki intent-filter. dan Pada DetailActivity digunakan untuk menampilkan informasi detail dari siswa yang dipilih oleh pengguna. Activity ini hanya bisa dipanggil dari dalam aplikasi, tanpa adanya intent-filter.
 
 2. Book
+<img width="380" height="180" alt="Screenshot 2025-08-20 175907" src="https://github.com/user-attachments/assets/4485c65e-33bc-4f2b-908c-573d9ce77c16" />
+
+Penjelasan : Kode pada file Book.kt berfungsi sebagai model data dari informasi setiap buku yang akan ditampilkan pada aplikasi. File ini berupa data Class Book yyang memiliki empat properti utama, yaitu title sebagai (judul buku), author sebagai (penulis buku), year sebagai (tahun terbit), dan imageRes sebagai (ID resource untuk gambar sampul) yang akan menjadi struktur data pada RecyclerView.
 
 3. Main
 
