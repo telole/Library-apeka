@@ -21,7 +21,7 @@ Ini adalah proyek sederhana untuk belajar Recycle View menggunakan Git & Android
 
 ## 📸 Penjelasan Kode
 1. AndroidManifest.xml
-<img width="1000" height="500" alt="Screenshot 2025-08-20 165627" src="https://github.com/user-attachments/assets/76c1bba2-1969-4fe2-a5c0-61853ee6435c" />
+<img width="800" height="650" alt="Screenshot 2025-08-20 165627" src="https://github.com/user-attachments/assets/76c1bba2-1969-4fe2-a5c0-61853ee6435c" />
 
 2. Book
 
