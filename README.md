@@ -55,10 +55,16 @@ Penjelasan : Kode pada MainActivity adalah activity utama yang menampilkan dafta
 Penjelasan : Kode pada SplashScreen merupakan activity pertama yang dijalankan aplikasi. Pada method onCreate(Bundle savedInstanceState), layout splash di-inflate menggunakan setContentView(R.layout.activity_splash). Activity ini dideklarasikan di AndroidManifest.xml dengan intent-filter berisi MAIN dan LAUNCHER, sehingga sistem Android tahu untuk menjadikannya entry point aplikasi. Biasanya, di dalam SplashScreen terdapat kode Handler.postDelayed() atau Coroutine yang berfungsi menunda beberapa detik sebelum memanggil startActivity(new Intent(this, MainActivity.class)). Setelah itu, finish() dipanggil agar SplashScreen ditutup dan pengguna dialihkan ke MainActivity. Dengan cara ini, SplashScreen berfungsi sebagai jembatan awal sebelum ke halaman utama.
 
 ## 📸 Tampilan dari Hasil Aplikasi
-- Tampilan Awal Setelah memasuki Aplikasi 
+- Tampilan awal Setelah pengguna memasuki aplikasi, muncul logo selama beberapa detik
 <img src="https://github.com/user-attachments/assets/a34f3c29-6082-43d4-a6a5-e91d9fecde27" height="400"/>
+
+- Tampilan ketika pengguna memasuki halaman utama aplikasi
 <img src="https://github.com/user-attachments/assets/39c1b2d2-6f63-48d4-b8f5-af5803bda0b3" height="400"/>
+
+- Tampilan ketika pengguna ingin melihat informasi buku secara lebih detail
 <img src="https://github.com/user-attachments/assets/6edd6bfe-c759-4f65-a327-afb0edd40e4b" height="400"/>
+
+- Tampilan ketika informasi buku ditampilkan secara detail
 <img src="https://github.com/user-attachments/assets/8e1f3a18-b842-42ac-aac6-3b2354662763" height="400"/>
 
 
