@@ -67,6 +67,53 @@ Kesimpulan dari Project ini menunjukkan bahwa penggunaan RecyclerView dalam peng
 <img src="https://github.com/user-attachments/assets/39c1b2d2-6f63-48d4-b8f5-af5803bda0b3" height="600"/>
 
 
+## 🎨 Layout Project
+
+### 1. `activity_main.xml`
+Digunakan oleh **MainActivity** sebagai halaman utama aplikasi.  
+- **ConstraintLayout** sebagai root.  
+- **RecyclerView** (`@+id/recyclerView`) → menampilkan daftar buku secara vertikal.  
+
+👉 Layout ini hanya menampung RecyclerView penuh layar sehingga seluruh daftar buku bisa digulir oleh pengguna.
+
+---
+
+### 2. `item_buku.xml`
+Digunakan oleh **BookAdapter** untuk menampilkan setiap item di daftar buku.  
+- **LinearLayout (horizontal)** → membagi layar menjadi dua bagian.  
+- **ImageView** (`@+id/imgBuku`) → menampilkan cover buku di sisi kiri.  
+- **LinearLayout (vertical)** → berisi teks di sisi kanan.  
+  - **TextView** (`@+id/tvJudul`) → judul buku.  
+  - **TextView** (`@+id/tvPenulis`) → nama penulis.  
+  - **TextView** (`@+id/tvTahun`) → tahun terbit.  
+
+👉 Layout ini mendefinisikan bagaimana satu item buku ditampilkan (gambar + informasi singkat).
+
+---
+
+### 3. `activity_detail.xml`
+Digunakan oleh **DetailActivity** untuk menampilkan detail dari buku yang dipilih.  
+- **ConstraintLayout** sebagai root.  
+- **ImageView** (`@+id/imgDetail`) → cover buku ukuran lebih besar.  
+- **TextView** (`@+id/tvDetailJudul`) → menampilkan judul.  
+- **TextView** (`@+id/tvDetailPenulis`) → menampilkan penulis.  
+- **TextView** (`@+id/tvDetailTahun`) → menampilkan tahun terbit.  
+
+👉 Layout ini menampilkan informasi lengkap buku sehingga lebih fokus dibanding daftar.
+
+---
+
+### 4. `activity_splash.xml`
+Digunakan oleh **SplashScreen** saat pertama kali aplikasi dibuka.  
+- **ConstraintLayout** sebagai root.  
+- **ImageView** (`@+id/logo`) → logo atau icon aplikasi.  
+- (Opsional) **TextView** → menampilkan nama aplikasi di bawah logo.  
+
+👉 Layout ini bersifat sementara, hanya untuk memperkenalkan aplikasi sebelum masuk ke halaman utama.
+
+---
+
+
 - Tampilan ketika pengguna ingin melihat informasi buku secara lebih detail
 - Tampilan ketika informasi buku ditampilkan secara detail
 <img src="https://github.com/user-attachments/assets/6edd6bfe-c759-4f65-a327-afb0edd40e4b" height="600"/>
