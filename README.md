@@ -11,7 +11,7 @@ Project RecycleView ini merupakan project aplikasi sederhana dengan pembuatan be
 
 ## 📱 Fitur
 - Splash screen
-- List buku
+- Daftar buku (RecyclerView)
 - Detail buku
   
 ## 🔧 Teknologi
