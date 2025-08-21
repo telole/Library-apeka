@@ -1,7 +1,9 @@
 📱Menampilkan Data Dari Api ke Recycle View
+
 Pembuatan project ini bertujuan untuk menampilkan data yang diambil dari API ke dalam tampilan RecyclerView pada aplikasi Android. Dengan menggunakan library Retrofit untuk komunikasi dengan REST API, Gson untuk parsing data JSON, dan Glide untuk memuat gambar, aplikasi ini dapat menampilkan data secara dinamis. Praktikum ini dirancang untuk memahami cara kerja API, RecyclerView, serta pengelolaan data melalui Adapter.
 
 👥 Daftar Anggota Tim
+
 M Alfian Fauzi ( 21 )
 Madina A.A.F.S ( 23 )
 Meutya Candra Dewi ( 26)
@@ -9,6 +11,7 @@ Naraya Agastya (28)
 Nur Aimah Aulia A.(29)
 
 🎯 Tujuan Project
+
 Tujuan dari laporan ini adalah untuk mendokumentasikan proses perancangan dan pembuatan aplikasi Android yang menampilkan data dari API ke dalam RecyclerView. Laporan ini menjelaskan tentang penerapan berbagai komponen utama dalam pemrograman Android, seperti Retrofit untuk mengambil data dari API, RecyclerView untuk menampilkan data secara dinamis, serta Glide untuk memuat gambar dari URL.
 
 - Penjelasan Apa itu API?
@@ -47,6 +50,7 @@ Penjelasan Praktikum
 ![WhatsApp Image 2025-08-21 at 10 20 54_a60d5c87](https://github.com/user-attachments/assets/b269637c-172e-4670-a426-5f864323a345)
 ![WhatsApp Image 2025-08-21 at 10 20 54_1d98c28a](https://github.com/user-attachments/assets/067a7612-6d4b-4b06-9565-aaa2f6acb7c8)
 ![WhatsApp Image 2025-08-21 at 10 20 55_9b28705c](https://github.com/user-attachments/assets/cdc200b3-391c-498d-b2b5-68cb4c9f9fe6)
+
 
 
 
